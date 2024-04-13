@@ -1,0 +1,62 @@
+.a,
+.b,
+.c,
+.d,
+.second_a,
+.fourth_a {
+  background-color: grey;
+}
+
+.first,
+.second,
+.third,
+.fourth,
+.fifth {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
+}
+
+.a {
+  width: 100px;
+  height: 210px;
+}
+
+.mr {
+  margin-right: 10px;
+}
+
+.mb {
+  margin-bottom: 10px;
+}
+
+.b,
+.c,
+.d,
+.fourth_a {
+  width: 100px;
+  height: 100px;
+}
+
+.wrap {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.clear-fix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.second_a {
+  width: 100px;
+  height: 100px;
+}

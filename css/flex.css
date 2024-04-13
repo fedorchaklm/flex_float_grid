@@ -1,0 +1,49 @@
+.a,
+.b,
+.c,
+.d {
+  width: 100px;
+  background-color: grey;
+}
+
+.b,
+.c,
+.d {
+  height: 100px;
+}
+
+.first,
+.second,
+.third,
+.fourth,
+.fifth {
+  display: flex;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.first {
+  justify-content: center;
+  gap: 10px;
+}
+
+.group_vertical,
+.group_horizontal {
+  display: flex;
+  gap: 10px;
+}
+
+.group_vertical {
+  flex-direction: column;
+}
+
+.second,
+.third,
+.fourth {
+  justify-content: space-between;
+}
+
+.fifth {
+  justify-content: end;
+  gap: 10px;
+}

@@ -1,0 +1,90 @@
+.a,
+.b,
+.c,
+.d {
+  background-color: grey;
+}
+
+.first,
+.second,
+.third,
+.fourth,
+.fifth {
+  display: grid;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.first {
+  grid-template-columns: repeat(2, 100px);
+  grid-template-rows: repeat(2, 100px);
+  gap: 10px;
+  justify-content: center;
+}
+
+.first .a {
+  grid-row: 1 / span 2;
+}
+
+.second {
+  grid-template-columns: repeat(2, 100px);
+  grid-template-rows: 100px;
+  justify-content: space-between;
+}
+
+.third {
+  grid-template-columns: 100px auto repeat(3, 100px);
+  grid-template-rows: 100px;
+  gap: 0 10px;
+  grid-template-areas: "a .  b c d";
+}
+
+.third .a {
+  grid-area: a;
+}
+
+.third .b {
+  grid-area: b;
+}
+
+.third .c {
+  grid-area: c;
+}
+
+.third .d {
+  grid-area: d;
+}
+
+.fourth {
+  grid-template-columns: repeat(2, 100px) auto repeat(2, 100px);
+  grid-template-rows: 100px;
+  gap: 0 10px;
+  grid-template-areas: "a b . c d";
+}
+
+.fourth .a {
+  grid-area: a;
+}
+
+.fourth .b {
+  grid-area: b;
+}
+
+.fourth .c {
+  grid-area: c;
+}
+
+.fourth .d {
+  grid-area: d;
+}
+
+.fifth {
+  grid-template-columns: repeat(2, 100px);
+  grid-template-rows: repeat(2, 100px);
+  gap: 10px;
+  justify-content: end;
+}
+
+.fifth .a {
+  grid-row: 1 / span 2;
+}
